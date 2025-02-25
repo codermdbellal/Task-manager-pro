@@ -145,11 +145,11 @@ const profile = () => {
   };
 
   return (
-    <div>
-      <div className="profile-container flex flex-col m-auto mt-2  w-[400px] h-[932px] rounded-[40px] border-4  border-black shadow-lg relative overflow-hidden ">
+    <div className=" bg-green-500 h-screen pt-1 ">
+      <div className="profile-container flex flex-col m-auto mt-2  w-[400px] h-[932px] rounded-[40px] border-4  border-black shadow-lg relative overflow-hidden bg-white ">
         {/*---------- Import Topnav componets ------------ */}
         <Topnav />
-        <div className="profile mt-5">
+        <div className="profile h-[745px] overflow-y-scroll mt-5 ">
           <div className="container">
             <div className="profile border-b-2 w-full pb-4  flex items-center gap-5 pl-5  ">
               <div className="profile-show-data  ">
@@ -183,13 +183,13 @@ const profile = () => {
                     <h3 className=" font-semibold capitalize  ">{user.name}</h3>
                     <p className="text-sm">{user.gmail}</p>
 
-                    <div>
+                    <div className=" ">
                       {logout && (
                         <div>
                           <p className=" text-red-600 ">
                             Are you sure delete your Account !
                           </p>
-                          <div className="flex justify-between absolute mt-[73px] z-20 w-[94%] left-3 border  bg-white  p-2 rounded-md ">
+                          <div className="flex justify-between absolute mt-[73px] z-20 w-[90%] left-3 border  bg-white  p-2 rounded-md ">
                             <button
                               className="border p-1 pl-5 pr-5 rounded-md bg-white hover:bg-gray-100 transition-all"
                               onClick={logOutHandle}

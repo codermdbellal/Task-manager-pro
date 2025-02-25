@@ -49,18 +49,18 @@ const notification = () => {
 
   // Create Delete api request in backend
   const DeleteNotififacton = async (id) => {
-     try {
-       await axios.delete(`http://localhost:3000/api/items/complete/${id}`);
-       setComplete(complete.filter((item) => item._id !== id)); // Remove from UI
-       alert("Deleted your Complete Task?");
-     } catch (error) {
-       console.error(error)
-     }
-  }
+    try {
+      await axios.delete(`http://localhost:3000/api/items/complete/${id}`);
+      setComplete(complete.filter((item) => item._id !== id)); // Remove from UI
+      alert("Deleted your Complete Task?");
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   return (
-    
-      <div className="notification-container flex flex-col m-auto mt-2  w-[400px] h-[932px] rounded-[40px] border-4  border-black shadow-lg relative overflow-hidden">
+    <div className=" h-screen pt-1 bg-green-500 " >
+      <div className="notification-container flex flex-col m-auto mt-2  w-[400px] h-[932px] rounded-[40px] border-4  border-black shadow-lg relative overflow-hidden bg-white ">
         <div className="notification">
           {/*-------------- Topnav components import -------- */}
           <Topnav />
@@ -101,12 +101,15 @@ const notification = () => {
                       <IoMdNotifications />
                     </div>
                     <div className="message">
-                      <span className="text-gray-100" >{taskComplete.name}</span>
+                      <span className="text-gray-100">{taskComplete.name}</span>
                     </div>
                   </div>
 
                   <div className="it border  bg-gray-50 rounded-full p-1  ">
-                    <RiDeleteBin5Fill onClick={() => DeleteNotififacton(taskComplete._id)} className=" text-red-800 cursor-pointer " />
+                    <RiDeleteBin5Fill
+                      onClick={() => DeleteNotififacton(taskComplete._id)}
+                      className=" text-red-800 cursor-pointer "
+                    />
                   </div>
                 </div>
               </div>
@@ -126,7 +129,9 @@ const notification = () => {
                       <IoMdNotifications />
                     </div>
                     <div className="message">
-                      <span className=" text-gray-100 " >{taskComplete.name}</span>
+                      <span className=" text-gray-100 ">
+                        {taskComplete.name}
+                      </span>
                     </div>
                   </div>
 
@@ -142,6 +147,7 @@ const notification = () => {
           <BottomNav />
         </div>
       </div>
+    </div>
   );
 };
 

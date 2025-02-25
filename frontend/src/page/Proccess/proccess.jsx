@@ -86,8 +86,8 @@ const proccess = () => {
   };
 
   return (
-    
-      <div className="proccess-container  flex flex-col m-auto mt-2  w-[400px] h-[932px] rounded-[40px] border-4  border-black shadow-lg relative overflow-hidden">
+    <div className=" h-screen bg-green-500 pt-2 " >
+      <div className="proccess-container bg-white flex flex-col m-auto   w-[400px] h-[932px] rounded-[40px] border-4  border-black shadow-lg relative overflow-hidden">
         {/*------------------ import Topnav components -------------- */}
         <Topnav />
         <div className="process">
@@ -223,7 +223,8 @@ const proccess = () => {
             )}
 
             {/* ----------------- All Task get --------------- */}
-            {taskget.map((item) =>
+            {taskget.map(
+              (item) =>
                 !hiddenTasks[item.name] ? ( // Check if the item is hidden
                   <div
                     key={item.name}
@@ -256,7 +257,7 @@ const proccess = () => {
         {/*--------------------- import Bottomnav components -------------- */}
         <Bottomnav />
       </div>
-   
+    </div>
   );
 };
 
