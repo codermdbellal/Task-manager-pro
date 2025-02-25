@@ -86,8 +86,8 @@ const proccess = () => {
   };
 
   return (
-    <div>
-      <div className="proccess-container flex flex-col m-auto mt-2  w-[400px] h-[932px] rounded-[40px] border-4  border-black  relative overflow-hidden">
+    
+      <div className="proccess-container  flex flex-col m-auto mt-2  w-[400px] h-[932px] rounded-[40px] border-4  border-black shadow-lg relative overflow-hidden">
         {/*------------------ import Topnav components -------------- */}
         <Topnav />
         <div className="process">
@@ -256,7 +256,7 @@ const proccess = () => {
         {/*--------------------- import Bottomnav components -------------- */}
         <Bottomnav />
       </div>
-    </div>
+   
   );
 };
 

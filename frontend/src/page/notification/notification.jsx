@@ -59,7 +59,7 @@ const notification = () => {
   }
 
   return (
-    <div>
+    
       <div className="notification-container flex flex-col m-auto mt-2  w-[400px] h-[932px] rounded-[40px] border-4  border-black shadow-lg relative overflow-hidden">
         <div className="notification">
           {/*-------------- Topnav components import -------- */}
@@ -142,7 +142,6 @@ const notification = () => {
           <BottomNav />
         </div>
       </div>
-    </div>
   );
 };
 

@@ -182,8 +182,8 @@ const addtask = () => {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
-      <div className="app-container flex justify-center items-center h-screen bg-emerald-200 ">
+    <div className="" >
+      <div className="app-container flex justify-center items-center h-screen ">
         <div className="app  w-[400px] h-[932px] rounded-[40px] border-4  border-black shadow-lg relative overflow-hidden">
           <Topnav />
           <br />
