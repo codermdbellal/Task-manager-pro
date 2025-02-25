@@ -1,0 +1,60 @@
+
+
+.carousel {
+   margin-left: 3px;
+}
+
+
+.carousel .item {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.carousel .item img {
+   z-index: 200;
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   border: 1px solid #55555523;
+}
+
+.add-new-habbits .task {
+   background: rgba(255, 0, 0, 0.836) ;
+   margin-right: 46px;
+   position: relative;
+   padding: 5px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   color: white;
+   text-transform: capitalize;
+}
+
+.add-new-habbits .icon-check-mark {
+  margin-top: -44px;
+  display: flex;
+  float: right;
+  margin-right: 10px;
+  z-index: 200; 
+  overflow: hidden;
+  padding: 2px;
+  background: red;
+  border-radius: 4px;
+  height: 34px;
+  width: 33px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.add-new-habbits .task-2 {
+   background: green;
+   padding: 5px;
+}
+
+.check-mark {
+   color: #fff;
+}
