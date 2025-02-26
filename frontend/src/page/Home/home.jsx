@@ -16,7 +16,7 @@ const home = () => {
   return (
     <div>
       <div className="app-container flex justify-center items-center bg-green-600 min-h-screen ">
-        <div className="app w-[400px] h-[932px] rounded-[40px] border-4  border-black shadow-lg relative overflow-hidden">
+        <div className="app w-[400px] h-[932px] border-4  border-black shadow-lg relative overflow-hidden">
           
           <br />
 

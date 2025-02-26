@@ -184,7 +184,7 @@ const addtask = () => {
   return (
     <div className="" >
       <div className="app-container flex justify-center items-center h-screen bg-green-500 ">
-        <div className="app  w-[400px] h-[932px] rounded-[40px] border-4  border-black shadow-lg relative overflow-hidden">
+        <div className="app  w-[400px] h-[932px] border-4  border-black shadow-lg relative overflow-hidden">
           <Topnav />
           <br />
           <div className="app-content  h-[745px] overflow-y-scroll -mt-5 ">
