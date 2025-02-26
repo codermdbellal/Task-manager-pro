@@ -42,7 +42,7 @@ const notification = () => {
   // Get complete data use resapi
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/items/complete")
+      .get("https://taskmenegerpro-backend.onrender.com/api/items/complete")
       .then((response) => setComplete(response.data))
       .catch((error) => console.error(error));
   }, []);
@@ -50,7 +50,7 @@ const notification = () => {
   // Create Delete api request in backend
   const DeleteNotififacton = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/api/items/complete/${id}`);
+      await axios.delete(`https://taskmenegerpro-backend.onrender.com/api/items/complete/${id}`);
       setComplete(complete.filter((item) => item._id !== id)); // Remove from UI
       alert("Deleted your Complete Task?");
     } catch (error) {

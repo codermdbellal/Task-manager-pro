@@ -64,7 +64,7 @@ const profile = () => {
   // Get User Data in bakend server
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/items/getAllImage")
+      .get("https://taskmenegerpro-backend.onrender.com/api/items/getAllImage")
       .then((response) => {
         if (response.data.length > 0) {
           setUserGet(response.data);
@@ -83,17 +83,17 @@ const profile = () => {
   // Get User Data in bakend server
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/items/task")
+      .get(`https://taskmenegerpro-backend.onrender.com/api/items/task`)
       .then((response) => setTaskList(response.data))
       .catch((error) => console.error(error));
   }, []);
 
   // ✅ Delete Item (DELETE request)
+
+
   const handleDelete = async (id) => {
     try {
-      await axios.delete(
-        `http://localhost:3000/api/items/userDataDelete/${id}`
-      ); // Ensure this matches your backend
+      await axios.delete(`https://taskmenegerpro-backend.onrender.com/api/items/userDataDelete/${id}`); // Ensure this matches your backend
       setUserGet(getUser.filter((item) => item._id !== id)); // Remove from UI
       alert("Deleted your Task meneger pro Account?");
     } catch (error) {
@@ -107,7 +107,7 @@ const profile = () => {
   // ✅ Delete Item (DELETE request)
   const HandleDeleteOne = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/api/items/task/${id}`); // Ensure this matches your backend
+      await axios.delete(`https://taskmenegerpro-backend.onrender.com/api/items/task/${id}`); // Ensure this matches your backend
       setTaskList(TaskList.filter((item) => item._id !== id)); // Remove from UI
       alert("Deleted your Task ?");
     } catch (error) {
@@ -127,7 +127,7 @@ const profile = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:3000/api/items/DeleteManyTask",
+        "https://taskmenegerpro-backend.onrender.com/api/items/DeleteManyTask",
         {
           method: "DELETE",
         }

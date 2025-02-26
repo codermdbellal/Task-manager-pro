@@ -69,7 +69,7 @@ const addtask = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/items/task",
+        "https://taskmenegerpro-backend.onrender.com/api/items/task",
         productData
       );
       console.log("Response:", response); // Debugging
@@ -85,7 +85,7 @@ const addtask = () => {
   const [product, setProducts] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/items/task")
+      .get("https://taskmenegerpro-backend.onrender.com/api/items/task")
       .then((response) => setProducts(response.data))
       .catch((error) => console.error(error));
   }, []);
@@ -109,7 +109,7 @@ const addtask = () => {
   // create api request for get data in backend data base with usePrams()
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/items/task/${id}`)
+      .get(`https://taskmenegerpro-backend.onrender.com/api/items/task/${id}`)
       .then((response) => setProductss(response.data))
       .catch((error) => console.error(error));
   }, [id]);
@@ -138,7 +138,7 @@ const addtask = () => {
 
     // this is post our data in complete DataBase
     try {
-      await axios.post("http://localhost:3000/api/items/complete", productss);
+      await axios.post("https://taskmenegerpro-backend.onrender.com/api/items/complete", productss);
       alert("Complete your Task");
       setProductss({ name: "" });
     } catch (err) {
@@ -159,7 +159,7 @@ const addtask = () => {
   // Get complete data use resapi
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/items/complete")
+      .get("https://taskmenegerpro-backend.onrender.com/api/items/complete")
       .then((response) => setComplete(response.data))
       .catch((error) => console.error(error));
   }, []);
@@ -167,7 +167,7 @@ const addtask = () => {
   // ✅ Delete Item (DELETE request)
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/api/items/complete/${id}`); // Ensure this matches your backend
+      await axios.delete(`https://taskmenegerpro-backend.onrender.com/api/items/complete/${id}`); // Ensure this matches your backend
       setComplete(complete.filter((item) => item._id !== id)); // Remove from UI
       alert("Deleted your Complete Task?");
     } catch (error) {

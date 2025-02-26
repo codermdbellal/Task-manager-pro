@@ -2,8 +2,6 @@
 // import React icons
 import { AiOutlineClose } from "react-icons/ai";
 
-// componnents 
-
 // import Fucntion state
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -23,7 +21,7 @@ const donework = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/items/task/${id}`)
+      .get(`https://taskmenegerpro-backend.onrender.com/api/items/task/${id}`)
       .then((response) => setProduct(response.data))
       .catch((error) => console.error(error))
   }, [id]);

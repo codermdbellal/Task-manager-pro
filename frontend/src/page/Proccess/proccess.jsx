@@ -26,7 +26,7 @@ const proccess = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/items/task/${id}`)
+      .get(`https://taskmenegerpro-backend.onrender.com/api/items/task/${id}`)
       .then((response) => setProduct(response.data))
       .catch((error) => console.error(error));
   }, [id]);
@@ -52,7 +52,7 @@ const proccess = () => {
     const updatedData = { day, month, year };
     try {
       const response = await axios.put(
-        `http://localhost:3000/api/items/taskupdate/${id}`,
+        `https://taskmenegerpro-backend.onrender.com/api/items/taskupdate/${id}`,
         updatedData
       );
       alert("Update successful!");
@@ -71,7 +71,7 @@ const proccess = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/items/task")
+      .get("https://taskmenegerpro-backend.onrender.com/api/items/task")
       .then((response) => setTaskGet(response.data))
       .catch((error) => console.error(error));
   }, []);
