@@ -184,27 +184,36 @@ const addtask = () => {
   return (
     <div className="" >
       <div className="app-container flex justify-center items-center h-screen bg-green-500 ">
-        <div className="app  w-[400px] h-screen relative overflow-hidden">
+        <div className="app  w-[400px] h-screen ">
           <Topnav />
           <br />
-          <div className="app-content  h-[790px] overflow-y-scroll mt-10 ">
+          <div className="app-content  h-[790px] overflow-y-auto mt-10  ">
             <div className="carousel">
               <OwlCarousel {...option}>
                 <div className="item">
-                  <img src={Homeimage1} className="" alt="" />
+                  <img src="https://i.postimg.cc/fW3gNgt5/homeimage.jpg" className="" alt="" />
                 </div>
 
                 <div className="item">
-                  <img src={Homeimage2} alt="" />
+                  <img src="https://i.postimg.cc/7Y0sCGN2/image1-jpg.jpg" alt="" />
                 </div>
 
                 <div className="item">
-                  <img src={Homeimage3} alt="" />
+                  <img src="https://i.postimg.cc/2582XHNQ/image2.jpg" alt="" />
                 </div>
 
                 <div className="item">
-                  <img src={Homeimage4} alt="" />
+                  <img src="https://i.postimg.cc/RCjpVQwm/image3.jpg" alt="" />
                 </div>
+
+                <div className="item">
+                  <img src="https://i.postimg.cc/jjgZVzRG/image4.jpg" alt="" />
+                </div>
+
+                <div className="item">
+                  <img src="https://i.postimg.cc/Jz8TjrTd/notification.jpg" alt="" />
+                </div>
+
               </OwlCarousel>
             </div>
 

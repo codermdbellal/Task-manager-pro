@@ -5,3 +5,17 @@
   z-index: 200;
   margin-left: -345px;
 }
+
+.read-container {
+  width: 390px;
+}
+
+@media (max-width:399px) {
+  
+  .read-container {
+    width: 100%;
+    margin-left: -322px;
+    margin-top: -5px;
+  }
+
+}
