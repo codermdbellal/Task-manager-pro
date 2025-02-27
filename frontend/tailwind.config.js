@@ -7,7 +7,7 @@ export default {
   plugins: [],
   theme: {
     screens: {
-      'xs': '480px',  // Custom extra small breakpoint
+      'xs': '400px',  // Custom extra small breakpoint
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',

@@ -21,7 +21,7 @@ const addNotifi = () => {
     <div>
       <div className="notification-container">
         <div className="notification">
-          <div className="content border m-3 rounded-md ">
+          <div className="content border w-[90%] ml-3 rounded-md ">
             <form className="flex flex-col p-2 ">
               <input
                 type="text"

@@ -5,3 +5,13 @@
      cursor: pointer;
 };
 
+
+.profile {
+     width: 400px;
+}
+
+@media (max-width:400px) {
+     .profile-container{
+          width: 100%;
+     }
+}

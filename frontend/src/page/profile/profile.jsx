@@ -22,7 +22,7 @@ import { BsBoxArrowLeft } from "react-icons/bs";
 import DemoPrfileImage from "../../assets/image/profile.jpg";
 
 // import css file
-import "./profile.css";
+import "./profile.css"
 const profile = () => {
   // create State for showing user input compontent
   const [userShow, setUserShow] = useState(false);
@@ -145,11 +145,11 @@ const profile = () => {
   };
 
   return (
-    <div className=" bg-green-500 h-screen pt-1 ">
-      <div className="profile-container flex flex-col m-auto mt-2  w-[400px] h-screen shadow-lg relative overflow-hidden bg-white ">
+    <div className="profile bg-green-500 h-screen pt-1 ">
+      <div className="profile-container w-[400px] flex flex-col m-auto mt-2 h-screen shadow-lg relative overflow-hidden bg-white ">
         {/*---------- Import Topnav componets ------------ */}
         <Topnav />
-        <div className="profile h-[790px] overflow-y-scroll mt-16 ">
+        <div className="profile h-[790px] overflow-y-scroll mt-16 overflow-x-hidden">
           <div className="container">
             <div className="profile border-b-2 w-full pb-4  flex items-center gap-5 pl-5  ">
               <div className="profile-show-data  ">

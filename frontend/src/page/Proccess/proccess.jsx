@@ -14,6 +14,9 @@ import { AiOutlineInfoCircle } from "react-icons/ai";
 import { RiDeleteBin5Fill } from "react-icons/ri";
 import { LuNotepadText } from "react-icons/lu";
 
+
+// import css file 
+import './proccess.css'
 const proccess = () => {
   // call use prams for get id in the backend database
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -87,7 +90,7 @@ const proccess = () => {
 
   return (
     <div className=" h-screen bg-green-500 pt-2 " >
-      <div className="proccess-container bg-white flex flex-col m-auto   w-[400px] h-screen shadow-lg relative overflow-hidden">
+      <div className="proccess-container w-[400px] bg-white flex flex-col m-auto  h-screen shadow-lg relative overflow-hidden">
         {/*------------------ import Topnav components -------------- */}
         <Topnav />
         <div className="process">

@@ -13,7 +13,7 @@ const bottomnav = ({ count }) => {
     <div>
       <div className="bottomnav-container">
         <div className="bottomnav ">
-          <div className="nav-item flex gap-5 justify-between p-5 border fixed w-[400px] bottom-0 bg-white ">
+          <div className="nav-item flex justify-between p-5 border fixed w-[400px] bottom-0 bg-white ">
             {/* Home Icon */}
             <div className="item flex justify-center items-center flex-col">
               <NavLink

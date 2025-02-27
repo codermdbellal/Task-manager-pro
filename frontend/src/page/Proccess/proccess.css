@@ -1,0 +1,12 @@
+
+
+.proccess-container {
+    width: 400px;
+    display: block;
+}
+
+@media (max-width:400px) {
+    .proccess-container {
+        width: 100%;
+    }
+}

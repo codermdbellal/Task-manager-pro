@@ -5,6 +5,8 @@
 import { IoMdNotifications } from "react-icons/io";
 import { FiImage } from "react-icons/fi";
 
+// import css file 
+import "./topnav.css"
 const topnav = () => {
   return (
     <div>
