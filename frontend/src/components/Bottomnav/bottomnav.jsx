@@ -12,8 +12,8 @@ const bottomnav = ({ count }) => {
   return (
     <div>
       <div className="bottomnav-container">
-        <div className="bottomnav">
-          <div className="nav-item border-2 flex gap-5 justify-between left-0 z-20 absolute bottom-0 p-5 w-full cursor-pointer">
+        <div className="bottomnav ">
+          <div className="nav-item flex gap-5 justify-between p-5 border fixed w-[400px] bottom-0 bg-white ">
             {/* Home Icon */}
             <div className="item flex justify-center items-center flex-col">
               <NavLink

@@ -146,10 +146,10 @@ const profile = () => {
 
   return (
     <div className=" bg-green-500 h-screen pt-1 ">
-      <div className="profile-container flex flex-col m-auto mt-2  w-[400px] h-[932px] shadow-lg relative overflow-hidden bg-white ">
+      <div className="profile-container flex flex-col m-auto mt-2  w-[400px] h-screen shadow-lg relative overflow-hidden bg-white ">
         {/*---------- Import Topnav componets ------------ */}
         <Topnav />
-        <div className="profile h-[745px] overflow-y-scroll mt-5 ">
+        <div className="profile h-[790px] overflow-y-scroll mt-16 ">
           <div className="container">
             <div className="profile border-b-2 w-full pb-4  flex items-center gap-5 pl-5  ">
               <div className="profile-show-data  ">

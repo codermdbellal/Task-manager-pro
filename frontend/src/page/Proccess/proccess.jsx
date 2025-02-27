@@ -87,11 +87,11 @@ const proccess = () => {
 
   return (
     <div className=" h-screen bg-green-500 pt-2 " >
-      <div className="proccess-container bg-white flex flex-col m-auto   w-[400px] h-[932px] shadow-lg relative overflow-hidden">
+      <div className="proccess-container bg-white flex flex-col m-auto   w-[400px] h-screen shadow-lg relative overflow-hidden">
         {/*------------------ import Topnav components -------------- */}
         <Topnav />
         <div className="process">
-          <div className="content  h-[750px] overflow-y-scroll ">
+          <div className="content  h-[840px] overflow-y-scroll mt-2 ">
             <h2 className=" text-3xl font-semibold pl-5 ">Proccess</h2>
             <div className="task-heading">
               <h3 className="text-center p-2 m-5 rounded-md flex items-center justify-between pl-5 bg-gray-100 border font-semibold text-gray-700 ">

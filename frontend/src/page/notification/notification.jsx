@@ -60,11 +60,11 @@ const notification = () => {
 
   return (
     <div className=" h-screen pt-1 bg-green-500 " >
-      <div className="notification-container flex flex-col m-auto mt-2  w-[400px] h-[932px] shadow-lg relative overflow-hidden bg-white ">
+      <div className="notification-container flex flex-col m-auto mt-2  w-[400px] h-screen shadow-lg relative overflow-hidden bg-white ">
         <div className="notification">
           {/*-------------- Topnav components import -------- */}
           <Topnav />
-          <div className="content h-[745px] overflow-y-scroll ">
+          <div className="content h-[840px] overflow-y-scroll mt-12 ">
             <div className="carousel">
               <OwlCarousel {...option}>
                 <div className="item">
