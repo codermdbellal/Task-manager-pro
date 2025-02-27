@@ -187,7 +187,7 @@ const addtask = () => {
         <div className="app  w-[400px] h-screen ">
           <Topnav />
           <br />
-          <div className="app-content  h-[790px] overflow-y-auto mt-10  ">
+          <div className="app-content h-[750px] overflow-y-auto mt-[45px] ">
             <div className="carousel">
               <OwlCarousel {...option}>
                 <div className="item">
