@@ -6,7 +6,7 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 
 // Link State reactrouter-dom
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 // import image
 import Homeimage from "../../assets/image/homeimage.jpg";
@@ -16,7 +16,7 @@ const home = () => {
   return (
     <div>
       <div className="app-container flex justify-center items-center bg-green-600 min-h-screen ">
-        <div className="app w-[400px] h-[932px] border-4  border-black shadow-lg relative overflow-hidden">
+        <div className="app w-[400px] h-[932px] shadow-lg relative overflow-hidden">
           
           <br />
 

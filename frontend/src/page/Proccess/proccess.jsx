@@ -87,7 +87,7 @@ const proccess = () => {
 
   return (
     <div className=" h-screen bg-green-500 pt-2 " >
-      <div className="proccess-container bg-white flex flex-col m-auto   w-[400px] h-[932px] border-4  border-black shadow-lg relative overflow-hidden">
+      <div className="proccess-container bg-white flex flex-col m-auto   w-[400px] h-[932px] shadow-lg relative overflow-hidden">
         {/*------------------ import Topnav components -------------- */}
         <Topnav />
         <div className="process">
