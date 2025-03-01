@@ -18,19 +18,19 @@
   
   .read-container {
     width: 100%;
-    margin-left: -340px;
+    margin-left: -330px;
     margin-top: -5px;
-    height: 400px;
+    height: 500px;
     background: #66D2CE;
   }
 
 }
 
-@media (max-width:360px) {
+@media (max-width:400px) {
   
   .read-container {
     width: 100%;
-    margin-left: -312px;
+    margin-left: -345px;
     margin-top: -6px;
   }
 
