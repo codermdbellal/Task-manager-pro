@@ -26,11 +26,11 @@
 
 }
 
-@media (max-width:361px) {
+@media (max-width:360px) {
   
   .read-container {
     width: 100%;
-    margin-left: -310px;
+    margin-left: -312px;
     margin-top: -6px;
   }
 
