@@ -233,7 +233,7 @@ const addtask = () => {
                       <span className="span capitalize ">{task.name}</span>
                     </Link>
 
-                    <div className=" bg-orange-500 hover:bg-orange-600 transition-all  h-[32px] mt-1 rounded-md w-[40px] -ml-6 mr-2 flex justify-center items-center">
+                    <div className=" bg-orange-500 hover:bg-orange-600 transition-all relative  h-[32px] mt-1 rounded-md w-[40px] -ml-6 mr-2 flex justify-center items-center">
                       <Link to={`/about/${task._id}`} className="linke">
                         <div
                           className={`check-box  w-[25px] h-[25px] border-2 rounded-full p-1 flex items-center justify-center cursor-pointer 
@@ -248,7 +248,7 @@ const addtask = () => {
                         </div>
                         {/*----------- showing Reads ----------- */}
                         {isChecked[task._id] && (
-                          <div>{showReward && <Reward />}</div>
+                          <div className="relative" >{showReward && <Reward />}</div>
                         )}
                       </Link>
                     </div>

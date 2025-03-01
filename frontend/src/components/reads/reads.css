@@ -3,8 +3,11 @@
 .read-container {
   background-color:#66D2CE;
   z-index: 200;
+  position: fixed;
+  padding-top: 200px;
+  top: 60px;
   margin-left: -365px;
-  margin-top: 23px;
+  margin-top: 30px;
   border-top: 1px solid #55555521;
 }
 
@@ -18,20 +21,11 @@
   
   .read-container {
     width: 100%;
-    margin-left: -330px;
-    margin-top: -5px;
     height: 500px;
-    background: #66D2CE;
-  }
-
-}
-
-@media (max-width:400px) {
-  
-  .read-container {
-    width: 100%;
-    margin-left: -345px;
     margin-top: -6px;
+    background: #66D2CE;
+    left: 0px;
+    margin-left: 0px;
   }
 
 }
