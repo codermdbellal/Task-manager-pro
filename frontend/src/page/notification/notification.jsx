@@ -61,7 +61,7 @@ const notification = () => {
   };
 
   return (
-    <div className=" h-screen pt-1 bg-green-500 ">
+    <div className=" pt-1 ">
       <div className="notification-container laptop m-auto bg-white ">
         <div className="notification all-content ">
           {/*-------------- Topnav components import -------- */}
@@ -97,7 +97,7 @@ const notification = () => {
               </h2>
             </div>
 
-            <div className=" max-h-[200px] overflow-y-scroll pb-5 ">
+            <div className=" max-h-[200px] overflow-y-auto pb-5 ">
               {complete.map((taskComplete) => (
                 <div key={taskComplete._id}>
                   <div className="notification-content mt-2 ml-2 border p-3 rounded-md shadow-md flex justify-between mr-2 bg-blue-600 ">
@@ -130,7 +130,7 @@ const notification = () => {
                 <IoMdNotifications className="text-orange-600 mt-1 w-[30px] h-[30px] rounded-full bg-gray-100 p-1 border " />
               </h2>
             </div>
-            <div className=" max-h-[200px] overflow-x-auto ">
+            <div className=" max-h-[200px] overflow-y-auto ">
               {complete.map((taskComplete) => (
                 <div key={taskComplete._id}>
                   <div className="notification-content mt-2 ml-2 border p-3 rounded-md flex justify-between mr-2 shadow-md bg-purple-600 ">

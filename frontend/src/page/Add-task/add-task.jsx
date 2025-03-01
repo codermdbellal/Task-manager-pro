@@ -179,7 +179,7 @@ const addtask = () => {
   
   return (
     <div className="" >
-      <div className="app-container flex justify-center bg-green-500 h-screen ">
+      <div className="app-container flex justify-center">
         <div className="app laptop  ">
           {/*--------- import top nav --------- */}
           <Topnav/>

@@ -1,7 +1,7 @@
 
 
 .read-container {
-  background-color:#FFCFEF;
+  background-color:#66D2CE;
   z-index: 200;
   margin-left: -365px;
   margin-top: 23px;
@@ -11,6 +11,7 @@
 .read-container {
   width: 403px;
   height: 650px;
+  border-radius: 10px;
 }
 
 @media (max-width:430px) {
@@ -19,8 +20,18 @@
     width: 100%;
     margin-left: -340px;
     margin-top: -5px;
-    height: 500px;
-    background: #FFCFEF;
+    height: 400px;
+    background: #66D2CE;
+  }
+
+}
+
+@media (max-width:361px) {
+  
+  .read-container {
+    width: 100%;
+    margin-left: -310px;
+    margin-top: -6px;
   }
 
 }

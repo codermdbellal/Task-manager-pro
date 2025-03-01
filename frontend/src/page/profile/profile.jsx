@@ -145,7 +145,7 @@ const profile = () => {
   };
 
   return (
-    <div className="profile bg-green-500 h-screen pt-1 ">
+    <div className="profile pt-1 ">
       <div className="profile-container laptop m-auto bg-white ">
         {/*---------- Import Topnav componets ------------ */}
         <Topnav />

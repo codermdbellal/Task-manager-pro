@@ -89,7 +89,7 @@ const proccess = () => {
   };
 
   return (
-    <div className=" h-screen bg-green-500 pt-2  " >
+    <div className=" pt-2  " >
       <div className="proccess-container  laptop m-auto ">
         {/*------------------ import Topnav components -------------- */}
         <Topnav />
