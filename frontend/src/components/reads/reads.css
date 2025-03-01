@@ -1,21 +1,26 @@
 
 
 .read-container {
-  background-color:#fff;
+  background-color:#FFCFEF;
   z-index: 200;
-  margin-left: -345px;
+  margin-left: -365px;
+  margin-top: 23px;
+  border-top: 1px solid #55555521;
 }
 
 .read-container {
-  width: 390px;
+  width: 403px;
+  height: 650px;
 }
 
-@media (max-width:399px) {
+@media (max-width:430px) {
   
   .read-container {
     width: 100%;
-    margin-left: -322px;
+    margin-left: -340px;
     margin-top: -5px;
+    height: 500px;
+    background: #FFCFEF;
   }
 
 }

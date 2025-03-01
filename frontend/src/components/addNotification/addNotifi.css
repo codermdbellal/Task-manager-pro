@@ -1,0 +1,9 @@
+
+
+
+@media (max-width:448px) {
+    
+    .notification .content {
+        width: 80%;
+    }
+}

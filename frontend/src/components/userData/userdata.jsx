@@ -99,7 +99,7 @@ function userdata() {
       {show && (
         <div>
           <div>
-            <div className="setYourData border shadow-lg absolute top-12 bg-white w-[100%] p-5 ">
+            <div className="setYourData  shadow-lg absolute  bg-white w-[100%] p-5 ">
               {/*------- import colse icon ------- */}
               <IoMdCloseCircleOutline
                 onClick={HideHandle}

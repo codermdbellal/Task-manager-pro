@@ -4,6 +4,9 @@ import myVideo from "../../assets/video/Animated Present Box.mp4";
 // import useState
 import { useState, useEffect } from "react";
 
+// import components
+ 
+
 // import css file
 import "./reads.css";
 const reads = () => {
@@ -19,9 +22,9 @@ const reads = () => {
     <div>
       {hide && (
         <div>
-          <div className="read-container z-50 w-[390px] h-[84%] flex  m-auto top-[60px] rounded-[10px] fixed ">
+          <div className="read-container z-50 flex  m-auto top-[60px] fixed ">
             <div className="reads flex justify-center items-center">
-              <div className="reads-content w-[95%] absolute m-auto  left-2  rounded-md p-2 mt-12 ">
+              <div className="reads-content w-[95%] absolute m-auto  left-[8px]  rounded-md p-2 mt-0 ">
                 <video className="rounded-md w-full shadow-md  border " autoPlay muted loop controls>
                   <source className=" h-[100%] rounded-md " src={myVideo} type="video/mp4" />
                 </video>
@@ -37,6 +40,7 @@ const reads = () => {
           </div>
         </div>
       )}
+
     </div>
   );
 };

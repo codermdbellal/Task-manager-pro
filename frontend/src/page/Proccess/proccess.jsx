@@ -89,12 +89,12 @@ const proccess = () => {
   };
 
   return (
-    <div className=" h-screen bg-green-500 pt-2 " >
-      <div className="proccess-container w-[400px] bg-white flex flex-col m-auto  h-screen shadow-lg relative overflow-hidden">
+    <div className=" h-screen bg-green-500 pt-2  " >
+      <div className="proccess-container  laptop m-auto ">
         {/*------------------ import Topnav components -------------- */}
         <Topnav />
-        <div className="process">
-          <div className="content  h-[840px] overflow-y-scroll mt-2 ">
+        <div className="process all-content ">
+          <div className="content">
             <h2 className=" text-3xl font-semibold pl-5 ">Proccess</h2>
             <div className="task-heading">
               <h3 className="text-center p-2 m-5 rounded-md flex items-center justify-between pl-5 bg-gray-100 border font-semibold text-gray-700 ">
@@ -186,7 +186,7 @@ const proccess = () => {
             {/*------------------ Your all work list --------------- */}
             <div className="title mt-10">
               <h2 className=" text-xl font-semibold pl-6 text-gray-600 font-sans mt-5 flex justify-between items-center ">
-                My work List !{" "}
+                My work List !
                 <LuNotepadText className=" mr-8 text-green-800 bg-gray-100 border p-1 w-[30px] h-[30px] rounded-full cursor-pointer " />
               </h2>
               <hr className=" m-5 mt-2 " />
@@ -197,7 +197,7 @@ const proccess = () => {
               <div>
                 {visible && (
                   <div>
-                    <div className="full-task border m-5  rounded-md p-3 bg-orange-400">
+                    <div className="full-task border m-5 rounded-md p-3 bg-orange-400">
                       <TbBrandGoogleAnalytics className=" text-blue-600 border bg-gray-100 w-[30px] h-[30px] p-1 rounded-full " />
                       <h2 className="  text-md font-semibold font-serif capitalize mt-2 ">
                         {product.name}

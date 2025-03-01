@@ -4,6 +4,38 @@
    margin-left: 3px;
 }
 
+.laptop {
+   width: 430px;
+   position: relative;
+   height: 900px;
+   border-radius: 30px;
+   margin-top: 26px;
+   border: 3px solid black;
+   overflow: hidden;
+}
+
+@media (max-width:448px) {
+   .laptop {
+      height: 100vh;
+      border: none;
+      margin-top: 0px;
+      border-radius: inherit;
+      margin-top: -5px;
+   }
+   .all-content {
+      margin-bottom: 100px;
+      height: 80%;
+      padding-bottom: 10px;
+   }
+}
+
+.all-content {
+   margin-top: 60px;
+   max-height: 740px;
+   padding-bottom: 10px;
+   overflow-y: auto;
+}
+
 
 .carousel .item {
     width: 100%;

@@ -1,8 +1,4 @@
-// import image
-import Homeimage1 from "../../assets/image/image1.jpg.jpg";
-import Homeimage2 from "../../assets/image/image2.jpg";
-import Homeimage3 from "../../assets/image/image3.jpg";
-import Homeimage4 from "../../assets/image/image4.jpg";
+
 
 // import component
 import Data from "../../components/Date/date.jsx";
@@ -183,17 +179,14 @@ const addtask = () => {
   
   return (
     <div className="" >
-      <div className="app-container flex justify-center items-center h-screen bg-green-500 ">
-        <div className="app  w-[400px] h-screen ">
-          <Topnav />
-          <br />
-          <div className="app-content h-[750px] overflow-y-auto mt-[45px] ">
-            <div className="carousel">
+      <div className="app-container flex justify-center bg-green-500 h-screen ">
+        <div className="app laptop  ">
+          {/*--------- import top nav --------- */}
+          <Topnav/>
+          <div className="app-content all-content ">
+            <div className="carousel mt-[5px] ">
               <OwlCarousel {...option}>
-                <div className="item">
-                  <img src="https://i.postimg.cc/fW3gNgt5/homeimage.jpg" className="" alt="" />
-                </div>
-
+            
                 <div className="item">
                   <img src="https://i.postimg.cc/7Y0sCGN2/image1-jpg.jpg" alt="" />
                 </div>
@@ -208,10 +201,6 @@ const addtask = () => {
 
                 <div className="item">
                   <img src="https://i.postimg.cc/jjgZVzRG/image4.jpg" alt="" />
-                </div>
-
-                <div className="item">
-                  <img src="https://i.postimg.cc/Jz8TjrTd/notification.jpg" alt="" />
                 </div>
 
               </OwlCarousel>
@@ -322,7 +311,7 @@ const addtask = () => {
 
                   <button
                     type="submit"
-                    className=" bg-green-500 hover:bg-green-600 transition-all p-2 rounded-lg pl-5 pr-5 text-slate-100 ml-5 mt-2 "
+                    className=" bg-green-500 hover:bg-green-600 transition-all p-2 rounded-lg pl-5 pr-5 text-slate-100 ml-5 mt-2"
                   >
                     Submit
                   </button>

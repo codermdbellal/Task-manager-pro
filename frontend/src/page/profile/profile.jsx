@@ -31,7 +31,7 @@ const profile = () => {
   // Create State for menage Clear History and
   const [showClear, setShowClear] = useState(false);
   // Create State for menage Add Notification systems
-  const [notification, setNotification] = useState(true);
+  const [notification, setNotification] = useState(false);
 
   // Hendeler click show and hide
   const userShowHandle = () => {
@@ -146,14 +146,14 @@ const profile = () => {
 
   return (
     <div className="profile bg-green-500 h-screen pt-1 ">
-      <div className="profile-container w-[400px] flex flex-col m-auto mt-2 h-screen shadow-lg relative bg-white ">
+      <div className="profile-container laptop m-auto bg-white ">
         {/*---------- Import Topnav componets ------------ */}
         <Topnav />
-        <div className="profile mb-[100px] overflow-y-scroll mt-16 overflow-x-hidden">
+        <div className="profile all-content   ">
           <div className="container">
             <div className="profile border-b-2 w-full pb-4  flex items-center gap-5 pl-5  ">
               <div className="profile-show-data  ">
-                <div className="profile-image border shadow-md rounded-full ">
+                <div className="profile-image mt-5 border shadow-md rounded-full ">
                   {error ? (
                     <div>
                       <img
@@ -183,13 +183,13 @@ const profile = () => {
                     <h3 className=" font-semibold capitalize  ">{user.name}</h3>
                     <p className="text-sm">{user.gmail}</p>
 
-                    <div className=" ">
+                    <div className={`transition-opacity duration-300 ${logout ? "opacity-100" : "opacity-0 pointer-events-none"}`}>
                       {logout && (
                         <div>
                           <p className=" text-red-600 ">
                             Are you sure delete your Account !
                           </p>
-                          <div className="flex justify-between absolute mt-[73px] z-20 w-[90%] left-3 border  bg-white  p-2 rounded-md ">
+                          <div className=" mt-[50px] w-[100%] left-[0px]  absolute bg-gray-100 p-2 flex justify-between  ">
                             <button
                               className="border p-1 pl-5 pr-5 rounded-md bg-white hover:bg-gray-100 transition-all"
                               onClick={logOutHandle}
@@ -265,7 +265,7 @@ const profile = () => {
                 <div className=" border m-3 rounded-md bg-gray-100 max-h-[270px] overflow-y-auto  ">
                   <div className="button">
                     <button
-                      className=" p-1 mb-2 pl-5 pr-5 bg-red-600 mt-2 ml-3 rounded-md text-gray-100 hover:bg-red-700 transition-all "
+                      className=" p-1 mb-2 pl-5 pr-5 bg-red-600 mt-2 ml-2 rounded-md text-gray-100 hover:bg-red-700 transition-all "
                       onClick={handleDeleteMany}
                     >
                       Delete All
@@ -274,7 +274,7 @@ const profile = () => {
                   {TaskList.map((task) => (
                     <div key={task._id}>
                       <div className="">
-                        <div className=" flex justify-between items-center rounded-md m-3 shadow-md p-2 bg-orange-600 hover:bg-orange-700 transition-all ">
+                        <div className=" flex justify-between items-center rounded-md ml-2 mt-2 mr-2 mb-2 shadow-md p-2 bg-orange-600 hover:bg-orange-700 transition-all ">
                           <h2 className=" text-gray-100 ">{task.name}</h2>
                           <div className="delete-icon">
                             <RiDeleteBin5Fill
@@ -294,8 +294,7 @@ const profile = () => {
               <div className="notification flex gap-5 items-center ">
                 <IoIosTime className="text-2xl" />
                 <h3 className=" font-semibold ">
-                  {" "}
-                  Clear notification History{" "}
+                  Clear notification History
                 </h3>
               </div>
               <div className="icon">
@@ -303,7 +302,7 @@ const profile = () => {
               </div>
             </div>
             {/*----------------- Gear-option 4 ------------------------ */}
-            <div className="gear-option  mt-5  m-3 pl-2 z-20 p-2 rounded-md border flex justify-between">
+            <div className="gear-option  mt-5 mb-20 m-3 pl-2 z-20 p-2 rounded-md border flex justify-between">
               <div className="notification flex gap-5 items-center ">
                 <BsBoxArrowLeft className="text-2xl" />
                 <h3 className=" font-semibold " onClick={logOutHandle}>

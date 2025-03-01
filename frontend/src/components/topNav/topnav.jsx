@@ -11,7 +11,7 @@ const topnav = () => {
   return (
     <div>
         <div className="topnav-container">
-            <div className="top-nav flex justify-between border w-[400px] z-20 pl-2 pr-2 pt-2 bg-white fixed top-0 ">
+            <div className="top-nav flex justify-between w-[430px] z-20 border-b   pl-2 pr-2 pt-2 bg-white absolute ">
                 <div className="profile h-[50px] w-[50px] ">
                     <FiImage className=" h-[40px] w-[40px] p-2 rounded-full border bg-gray-100 "/>
                 </div>

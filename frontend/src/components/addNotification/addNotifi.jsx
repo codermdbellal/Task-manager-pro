@@ -20,9 +20,9 @@ const addNotifi = () => {
   return (
     <div>
       <div className="notification-container">
-        <div className="notification">
-          <div className="content border w-[90%] ml-3 rounded-md ">
-            <form className="flex flex-col p-2 ">
+        <div className="notification  overflow-x-hidden ml-0 ">
+          <div className="content border ml-3 rounded-md ">
+            <form className="flex flex-col p-2 w-[100%] border rounded-md ">
               <input
                 type="text"
                 placeholder="Write notification message..."
@@ -30,18 +30,18 @@ const addNotifi = () => {
                 className=" p-2 border border-green-600 rounded-md shadow-md "
               />
               
-              <button onClick={() => setOpen(!isOpen)} className=" border border-green-600 mt-3 flex justify-between items-center p-1 rounded-md ">
+              <button onClick={() => setOpen(!isOpen)} className=" border  border-green-600 mt-3  flex justify-between items-center p-1 rounded-md ">
                {isSelect !== null ? isSelect : "Select a number"}
                <MdOutlineKeyboardArrowDown className="text-[20px] -mr-1 "/>
               </button>
 
               {isOpen && (
                 <div>
-                  <ul className=" border h-[200px] overflow-x-auto sha mt-3 rounded-md ">
+                  <ul className=" border h-[200px] overflow-x-hidden mt-3 rounded-md ">
                     {options.map((num) => (
                       <li
                         key={num}
-                        className=" p-1 rounded-md bg-gray-100 border hover:bg-green-600 hover:text-gray-100 cursor-pointer m-2 "
+                        className=" p-1 rounded-md bg-gray-100 border hover:bg-green-600 hover:text-gray-100 cursor-pointer m-2  "
                         onClick={() => {
                           setSelect(num); // Store selected number in state
                           setOpen(false); // Close dropdown

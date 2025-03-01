@@ -50,7 +50,9 @@ const notification = () => {
   // Create Delete api request in backend
   const DeleteNotififacton = async (id) => {
     try {
-      await axios.delete(`https://taskmenegerpro-backend.onrender.com/api/items/complete/${id}`);
+      await axios.delete(
+        `https://taskmenegerpro-backend.onrender.com/api/items/complete/${id}`
+      );
       setComplete(complete.filter((item) => item._id !== id)); // Remove from UI
       alert("Deleted your Complete Task?");
     } catch (error) {
@@ -59,12 +61,14 @@ const notification = () => {
   };
 
   return (
-    <div className=" h-screen pt-1 bg-green-500 " >
-      <div className="notification-container w-[400px] flex flex-col m-auto mt-2 border shadow-lg  bg-white ">
-        <div className="notification">
+    <div className=" h-screen pt-1 bg-green-500 ">
+      <div className="notification-container laptop m-auto bg-white ">
+        <div className="notification all-content ">
           {/*-------------- Topnav components import -------- */}
-          <Topnav />
-          <div className="content h-[700px] overflow-y-scroll mt-12 ">
+          <div className="Topnav -mt-[60px] ">
+            <Topnav />
+          </div>
+          <div className="content pt-[60px] border  ">
             <div className="carousel">
               <OwlCarousel {...option}>
                 <div className="item">
@@ -87,60 +91,67 @@ const notification = () => {
             </div>
 
             <div className="title">
-              <h2 className=" text-xl pl-2 pb-2 flex gap-2 items-center justify-between  text-gray-600 font-semibold ">
+              <h2 className=" border-b text-xl pl-2 pb-2 flex gap-2 items-center justify-between  text-gray-600 font-semibold ">
                 Complete Task !
                 <FaCheck className="text-orange-600 mt-1 w-[30px] h-[30px] mr-3 rounded-full bg-gray-100 p-2 border " />
               </h2>
             </div>
 
-            {complete.map((taskComplete) => (
-              <div key={taskComplete._id}>
-                <div className="notification-content mt-2 ml-2 border p-3 rounded-md shadow-md flex justify-between mr-2 bg-blue-600 ">
-                  <div className="nt-demo flex items-center">
-                    <div className="it mr-5 bg-green-400 rounded-full p-1 ">
-                      <IoMdNotifications />
+            <div className=" max-h-[200px] overflow-y-scroll pb-5 ">
+              {complete.map((taskComplete) => (
+                <div key={taskComplete._id}>
+                  <div className="notification-content mt-2 ml-2 border p-3 rounded-md shadow-md flex justify-between mr-2 bg-blue-600 ">
+                    <div className="nt-demo flex items-center">
+                      <div className="it mr-5 bg-green-400 rounded-full p-1 ">
+                        <IoMdNotifications />
+                      </div>
+                      <div className="message">
+                        <span className="text-gray-100">
+                          {taskComplete.name}
+                        </span>
+                      </div>
                     </div>
-                    <div className="message">
-                      <span className="text-gray-100">{taskComplete.name}</span>
-                    </div>
-                  </div>
 
-                  <div className="it border  bg-gray-50 rounded-full p-1  ">
-                    <RiDeleteBin5Fill
-                      onClick={() => DeleteNotififacton(taskComplete._id)}
-                      className=" text-red-800 cursor-pointer "
-                    />
+                    <div className="it border  bg-gray-50 rounded-full p-1  ">
+                      <RiDeleteBin5Fill
+                        onClick={() => DeleteNotififacton(taskComplete._id)}
+                        className=" text-red-800 cursor-pointer "
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+
             {/*------------------ personal notification  section -------------- */}
             <div className="title">
-              <h2 className=" text-xl pl-2 pb-1 text-gray-600 pt-3 font-semibold  flex gap-2 items-center justify-between mr-3 ">
+              <h2 className=" border-b text-xl pl-2 pb-2 text-gray-600 pt-3 font-semibold  flex gap-2 items-center justify-between mr-3 ">
                 Personal Notification !
                 <IoMdNotifications className="text-orange-600 mt-1 w-[30px] h-[30px] rounded-full bg-gray-100 p-1 border " />
               </h2>
             </div>
-            {complete.map((taskComplete) => (
-              <div key={taskComplete._id}>
-                <div className="notification-content mt-2 ml-2 border p-3 rounded-md flex justify-between mr-2 shadow-md bg-purple-600 ">
-                  <div className="nt-demo flex items-center">
-                    <div className="it mr-5 bg-green-400 rounded-full p-1 ">
-                      <IoMdNotifications />
+            <div className=" max-h-[200px] overflow-x-auto ">
+              {complete.map((taskComplete) => (
+                <div key={taskComplete._id}>
+                  <div className="notification-content mt-2 ml-2 border p-3 rounded-md flex justify-between mr-2 shadow-md bg-purple-600 ">
+                    <div className="nt-demo flex items-center">
+                      <div className="it mr-5 bg-green-400 rounded-full p-1 ">
+                        <IoMdNotifications />
+                      </div>
+                      <div className="message">
+                        <span className=" text-gray-100 ">
+                          {taskComplete.name}
+                        </span>
+                      </div>
                     </div>
-                    <div className="message">
-                      <span className=" text-gray-100 ">
-                        {taskComplete.name}
-                      </span>
-                    </div>
-                  </div>
 
-                  <div className="it border  bg-gray-50 rounded-full p-1  ">
-                    <RiDeleteBin5Fill className=" text-red-800 cursor-pointer " />
+                    <div className="it border  bg-gray-50 rounded-full p-1  ">
+                      <RiDeleteBin5Fill className=" text-red-800 cursor-pointer " />
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/*------------- BottomNav components import ----------*/}

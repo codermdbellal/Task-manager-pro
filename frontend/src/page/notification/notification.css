@@ -17,11 +17,13 @@
 }
 
 .notification-container {
-    width: 400px;
+    width: 430px;
 }
 
-@media (max-width:400px) {
+@media (max-width:430px) {
     .notification-container {
         width: 100%;
     }
+
+    
 }
