@@ -1,0 +1,10 @@
+
+
+@media (max-width:430px) {
+    
+    .week-counts {
+        margin-right: 5px;
+        text-align: center;
+        height: 52px;
+    }
+}

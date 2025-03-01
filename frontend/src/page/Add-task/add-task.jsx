@@ -214,7 +214,7 @@ const addtask = () => {
                 <p className=" pl-5 font-semibold pt-2 ">{formattedDate}</p>
               </div>
 
-              <div className="week-list flex g-5 ">
+              <div className="week-list flex g-5 sm:gap-1 ">
                 <div className="week">
                   <Data />
                 </div>

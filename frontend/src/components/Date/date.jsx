@@ -29,7 +29,7 @@ const App = () => {
   return (
     <div className=" flex ml-5 mt-5 gap-2 ">
       {weeks.map((week, index) => (
-        <p key={index} className="text-sm p-2 font-semibold text-gray-700 rounded-md bg-amber-300 ">
+        <p key={index} className="week-counts  text-sm p-2 font-semibold text-gray-700 rounded-md bg-amber-300 ">
           {week}
         </p>
       ))}
