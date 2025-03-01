@@ -321,7 +321,9 @@ const addtask = () => {
           </div>
 
           {/*----------- Add bottom nav ------ */}
-          <BottomNav count={count} />
+          <div className="bottom-nav ">
+           <BottomNav count={count} />
+          </div>
         </div>
       </div>
     </div>
