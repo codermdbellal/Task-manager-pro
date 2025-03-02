@@ -248,7 +248,7 @@ const addtask = () => {
                         </div>
                         {/*----------- showing Reads ----------- */}
                         {isChecked[task._id] && (
-                          <div className="relative" >{showReward && <Reward />}</div>
+                          <div className=" relative " >{showReward && <Reward />}</div>
                         )}
                       </Link>
                     </div>

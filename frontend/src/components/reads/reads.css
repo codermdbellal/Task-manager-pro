@@ -1,31 +1,27 @@
 
 
-.read-container {
-  background-color:#66D2CE;
-  z-index: 200;
-  position: fixed;
-  padding-top: 200px;
-  top: 60px;
-  margin-left: -365px;
-  margin-top: 30px;
-  border-top: 1px solid #55555521;
+
+.read-container{
+   height: 270px;
+   width: 340px;
+   z-index: 500;
+   margin-left: -350px;
+   background: #fff;
+   padding: 10px;
+   border-radius: 5px;
+   position: fixed;
+   top: 40%;
+   border: 1px solid blue;
 }
 
-.read-container {
-  width: 403px;
-  height: 650px;
-  border-radius: 10px;
+.read-container .video {
+  border-radius: 5px;
 }
 
-@media (max-width:430px) {
-  
+@media (max-width:400px) {
   .read-container {
-    width: 100%;
-    height: 500px;
-    margin-top: -6px;
-    background: #66D2CE;
-    left: 0px;
-    margin-left: 0px;
+    width: 300px;
+    height: 250px;
+    margin-left: -317px;
   }
-
 }
