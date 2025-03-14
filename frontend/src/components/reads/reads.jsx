@@ -36,10 +36,10 @@ const reads = () => {
                   <source src={myMusic} type="audio/mp3" />
                 </audio>
 
-                <div className="button mt-5 ">
+                <div className="button-1 mt-5 ">
                   <button
                     onClick={HideHandle}
-                    className=" bg-blue-600 transition-all p-2 w-[100%] z-30 rounded-md text-white hover:bg-blue-700"
+                    className="button bg-blue-600 transition-all p-2 w-[100%] z-30 rounded-md text-white hover:bg-blue-700"
                   >
                     Close
                   </button>
