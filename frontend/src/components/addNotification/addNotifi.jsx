@@ -20,9 +20,9 @@ const addNotifi = () => {
   return (
     <div>
       <div className="notification-container">
-        <div className="notification  overflow-x-hidden ml-0 ">
-          <div className="content border ml-3 rounded-md ">
-            <form className="flex flex-col p-2 w-[100%] border rounded-md ">
+        <div className="notification">
+          <div className="content rounded-md overflow-x-hidden border  p-2 m-auto w-[86%] shadow-md ">
+            <form className="flex flex-col ">
               <input
                 type="text"
                 placeholder="Write notification message..."
@@ -37,7 +37,7 @@ const addNotifi = () => {
 
               {isOpen && (
                 <div>
-                  <ul className=" border h-[200px] overflow-x-hidden mt-3 rounded-md ">
+                  <ul className=" border h-[200px] overflow-hidden mt-3 rounded-md ">
                     {options.map((num) => (
                       <li
                         key={num}

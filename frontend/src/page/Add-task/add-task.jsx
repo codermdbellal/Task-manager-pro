@@ -289,7 +289,7 @@ const addtask = () => {
               <div className="add-button">
                 <button
                   onClick={showHandle}
-                  className=" p-2 bg-amber-400 rounded-lg mt-5 ml-5 text-sm font-semibold "
+                  className=" p-2 bg-amber-400 rounded-lg mt-5 ml-5 text-sm font-semibold hover:bg-amber-500 transition-all "
                 >
                   Add New Task
                 </button>

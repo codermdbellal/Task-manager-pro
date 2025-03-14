@@ -133,7 +133,7 @@ const notification = () => {
             <div className=" max-h-[200px] overflow-y-auto ">
               {complete.map((taskComplete) => (
                 <div key={taskComplete._id}>
-                  <div className="notification-content mt-2 ml-2 border p-3 rounded-md flex justify-between mr-2 shadow-md bg-purple-600 ">
+                  <div className="notification-content mt-2 ml-2  p-3 mb-2 rounded-md flex justify-between mr-2 shadow-md bg-purple-600 ">
                     <div className="nt-demo flex items-center">
                       <div className="it mr-5 bg-green-400 rounded-full p-1 ">
                         <IoMdNotifications />

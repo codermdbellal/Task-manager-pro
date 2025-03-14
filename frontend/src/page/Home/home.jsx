@@ -15,8 +15,8 @@ import "./home.css";
 const home = () => {
   return (
     <div>
-      <div className="app-container flex justify-center items-center ">
-        <div className="app w-[400px] h-[932px] shadow-lg relative overflow-hidden">
+      <div className="app-container flex justify-center items-center  m-auto ">
+        <div className="app h-[932px] shadow-lg relative laptop overflow-hidden">
           
           <br />
 
@@ -36,7 +36,7 @@ const home = () => {
               <h3 className="text-3xl font-semibold">To build some habbits</h3>
              
               <Link to="/about" className="text-blue-500">
-                <button className="border flex items-center gap-5 bg-amber-300 p-2 rounded-full pl-10 pr-10 text-gray-800 mt-20 ">
+                <button className="border flex items-center gap-5 bg-amber-300 p-2 hover:bg-amber-400 transition-all rounded-full pl-10 pr-10 text-gray-800 mt-20 ">
                     Continue <FaArrowRightLong className="text-white" />
                 </button>
               </Link>

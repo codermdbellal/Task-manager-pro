@@ -5,13 +5,14 @@
    height: 270px;
    width: 340px;
    z-index: 500;
-   margin-left: -350px;
+   margin-left: -352px;
    background: #fff;
    padding: 10px;
    border-radius: 5px;
    position: fixed;
-   top: 40%;
-   border: 1px solid blue;
+   top: 41%;
+   box-shadow: 5px 5px 5px #55555509 , -5px -5px 5px #5555550c;
+   border: 1px solid #5555551f;
 }
 
 .read-container .video {

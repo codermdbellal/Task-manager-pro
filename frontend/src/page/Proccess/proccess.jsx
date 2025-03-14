@@ -14,9 +14,8 @@ import { AiOutlineInfoCircle } from "react-icons/ai";
 import { RiDeleteBin5Fill } from "react-icons/ri";
 import { LuNotepadText } from "react-icons/lu";
 
-
-// import css file 
-import './proccess.css'
+// import css file
+import "./proccess.css";
 const proccess = () => {
   // call use prams for get id in the backend database
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -89,7 +88,7 @@ const proccess = () => {
   };
 
   return (
-    <div className=" pt-2  " >
+    <div className=" pt-2  ">
       <div className="proccess-container  laptop m-auto ">
         {/*------------------ import Topnav components -------------- */}
         <Topnav />
@@ -97,7 +96,7 @@ const proccess = () => {
           <div className="content">
             <h2 className=" text-3xl font-semibold pl-5 ">Proccess</h2>
             <div className="task-heading">
-              <h3 className="text-center p-2 m-5 rounded-md flex items-center justify-between pl-5 bg-gray-100 border font-semibold text-gray-700 ">
+              <h3 className="text-center p-2 m-5 rounded-md flex items-center justify-between pl-5 bg-gray-100 border font-semibold">
                 {product ? (
                   <>
                     <h1 className="text-lg font-serif font-semibold capitalize text-orange-600 ">
@@ -197,13 +196,13 @@ const proccess = () => {
               <div>
                 {visible && (
                   <div>
-                    <div className="full-task border m-5 rounded-md p-3 bg-orange-400">
+                    <div className="full-task border m-5 rounded-md p-3 bg-green-600 shadow-md">
                       <TbBrandGoogleAnalytics className=" text-blue-600 border bg-gray-100 w-[30px] h-[30px] p-1 rounded-full " />
-                      <h2 className="  text-md font-semibold font-serif capitalize mt-2 ">
+                      <h2 className="  text-[17px] capitalize mt-2 text-gray-100  ">
                         {product.name}
                       </h2>
                       <div className="content flex justify-between">
-                        <div className="date flex gap-1 text-sm ">
+                        <div className="date flex gap-1 text-sm text-gray-100 ">
                           <h4>{product.month},</h4>
                           <h5>{product.day},</h5>
                           <h5>{product.year}</h5>
@@ -225,36 +224,6 @@ const proccess = () => {
               <p>Loading...</p>
             )}
 
-            {/* ----------------- All Task get --------------- */}
-            {taskget.map(
-              (item) =>
-                !hiddenTasks[item.name] ? ( // Check if the item is hidden
-                  <div
-                    key={item.name}
-                    className="full-task border m-5 rounded-md p-3 bg-orange-400"
-                  >
-                    <TbBrandGoogleAnalytics className="text-blue-600 border bg-gray-100 w-[30px] h-[30px] p-1 rounded-full" />
-                    <h2 className="text-md font-semibold font-serif capitalize mt-2">
-                      {item.name}
-                    </h2>
-                    <div className="content flex justify-between">
-                      <div className="date flex gap-1 text-sm">
-                        <h4>{item.month},</h4>
-                        <h5>{item.day},</h5>
-                        <h5>{item.year}</h5>
-                      </div>
-
-                      <div className="icon">
-                        <AiOutlineInfoCircle className="text-red-500 mb-2 -mt-10 border bg-gray-100 w-[30px] h-[30px] p-1 rounded-full" />
-                        <RiDeleteBin5Fill
-                          onClick={() => handleDelete(item.name)}
-                          className="text-red-600 cursor-pointer border bg-gray-100 w-[30px] h-[30px] p-1 rounded-full"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                ) : null // Don't render hidden items
-            )}
           </div>
         </div>
         {/*--------------------- import Bottomnav components -------------- */}

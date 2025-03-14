@@ -4,9 +4,11 @@ const Complete = require("../models/complete");
 const User = require("../models/user.js");
 
 
+
 // import package 
 const multer = require('multer');
 const path = require('path');
+require("dotenv").config();
 
 // Controller function to handle user creation and [Post] data in user data base
 const PostUserData = async (req, res) => {
@@ -117,7 +119,7 @@ const uploadImage = async (req, res) => {
     
     const { name, gmail } = req.body;
     
-    imageUrl = `http://localhost:3000/uploads/${req.file.filename}`;
+    imageUrl =  ` http://localhost:3000/uploads/${req.file.filename}`;
 
     // Save to MongoDB
     const newImage = new User({ filename: req.file.filename, url: imageUrl, name , gmail, });
@@ -132,7 +134,7 @@ const uploadImage = async (req, res) => {
 // Fetch all images
 const getAllImages = async (req, res) => {
   try {
-    const images = await User.find().sort({ createdAt: -1 }); // Latest messages first;
+    const images = await User.find(); // Latest messages first;
     res.json(images);
   } catch (error) {
     res.status(500).json({ error: "Error fetching images" });
