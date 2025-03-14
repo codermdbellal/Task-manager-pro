@@ -119,7 +119,7 @@ const uploadImage = async (req, res) => {
     
     const { name, gmail } = req.body;
     
-    imageUrl =  ` http://localhost:3000/uploads/${req.file.filename}`;
+    imageUrl =  `https://taskmenegerpro-backend.onrender.com/uploads/${req.file.filename}`;
 
     // Save to MongoDB
     const newImage = new User({ filename: req.file.filename, url: imageUrl, name , gmail, });
