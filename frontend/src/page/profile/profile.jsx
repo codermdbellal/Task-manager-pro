@@ -72,7 +72,7 @@ const profile = () => {
   // Get User Data in bakend server
   useEffect(() => {
     axios
-      .get("https://taskmenegerpro-backend.onrender.com/getAllImage")
+      .get("https://taskmenegerpro-backend.onrender.com/api/items/getAllImage")
       .then((response) => setUserGet(response.data))
       .catch((error) => console.error(error));
   }, []);
